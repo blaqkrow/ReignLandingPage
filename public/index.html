@@ -65,6 +65,12 @@
                 'timestamp': Date.now()
             })
         }
+        async function clickedRefund() {
+            console.log('coooool')
+            await firestore.collection('Refund').add({
+                'timestamp': Date.now()
+            })
+        }
         
         console.log('i am firebase wooohooo!', Date.now())
       </script>
@@ -347,10 +353,10 @@
                             <h4>Terms of Use</h4>
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a href="/termsandconditions.html">Terms & Conditions</a>
+                                    <a target="_blank" href="/termsandconditions.html">Terms & Conditions</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/refundpolicy.html">Refund Policy</a>
+                                    <a target="_blank" id="refundBtn" href="/refundpolicy.html">Refund Policy</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://bit.ly/CoderGuideV1">Coder Guide</a>
@@ -391,7 +397,12 @@
 
             var submitAssignment = document.getElementById('submitAssignmentBtn')
             var submitHomework = document.getElementById('submitHomeworkBtn')
+            var submitRefund = document.getElementById('refundBtn')
 
+            submitRefund.addEventListener('click', function() {
+                console.log('Refund clicked!')
+                clickedRefund()
+            })
             waBtn.addEventListener('click', function() {
                 console.log('Whatsapp Clicked!!!')
                 clickedWhatsapp()
