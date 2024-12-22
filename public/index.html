@@ -40,16 +40,95 @@
             background-color: rgba(255, 255, 255, 0.95);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
-            padding: 10px 20px;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .navbar-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
         }
 
         body {
-            padding-top: 80px; /* Add padding to prevent content from hiding behind fixed navbar */
+            padding-top: 70px;
         }
 
-        /* Remove the previous styles */
-        .yeo-header {
-            padding: 0;
+        .yeo-slogan {
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                height: auto;
+                padding: 10px;
+            }
+            
+            body {
+                padding-top: 90px;
+            }
+            
+            .yeo-slogan {
+                padding-top: 10px;
+            }
+
+            .navbar {
+                padding: 10px;
+                flex-direction: column;
+            }
+
+            .navbar-section {
+                width: 100%;
+                justify-content: center;
+                margin: 5px 0;
+            }
+
+            .hide-sm {
+                display: none;
+            }
+
+            .logo-img {
+                height: 30px;
+            }
+
+            .btn-hire-me, .price {
+                margin: 5px !important;
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            .slogan-content {
+                text-align: center;
+                padding: 20px 10px;
+            }
+
+            .slogan-bold {
+                font-size: 32px !important;
+            }
+
+            .client-logo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .inst-icon, .lang-icon {
+                margin: 5px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .navbar-section.hide-sm {
+                display: flex;
+            }
         }
     </style>
 </head>
