@@ -352,6 +352,93 @@
             position: relative;
             z-index: 1;
         }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .label-container {
+            position: fixed;
+            bottom: 50px;
+            right: 110px;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .float i {
+                font-size: 45px !important;
+            }
+
+            .label-container {
+                display: none;
+            }
+        }
+
+        /* Floating WhatsApp Button Styles */
+        #whatsappFloating {
+            position: fixed !important;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .label-container {
+            position: fixed !important;
+            bottom: 50px;
+            right: 110px;
+            z-index: 9999;
+        }
+
+        .label-text {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            #whatsappFloating {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            #whatsappFloating i {
+                font-size: 45px !important;
+                margin-top: 2px !important;
+            }
+
+            .label-container {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1041,10 +1128,10 @@
             </div>
         </footer>
 
-            <a id="whatsappFloating" target="_blank" href="https://bit.ly/3mMpWhH" class="float">
-                <i class="fa fa-whatsapp" style="margin-top: 5px; font-size:60px; color: #00bc9e;"></i>
+            <a id="whatsappFloating" target="_blank" href="https://bit.ly/3mMpWhH" style="position: fixed !important; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #fff; border-radius: 50px; text-align: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; justify-content: center;">
+                <i class="fa fa-whatsapp" style="font-size: 45px; color: #00bc9e;"></i>
             </a>
-            <div class="label-container">
+            <div class="label-container" style="position: fixed; bottom: 50px; right: 110px; z-index: 9999;">
             <div class="label-text">24hr Helpdesk! Contact Us Now!</div>
             </div>
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
