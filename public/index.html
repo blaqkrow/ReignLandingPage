@@ -116,11 +116,11 @@
             }
             
             body {
-                padding-top: 90px;
+                padding-top: 70px;
             }
             
             .yeo-slogan {
-                padding-top: 10px;
+                padding-top: 0;
             }
 
             .slogan-img {
@@ -158,11 +158,40 @@
 
             .slogan-content {
                 text-align: center;
-                padding: 20px 10px;
+                padding: 10px !important;
             }
 
             .slogan-bold {
-                font-size: 32px !important;
+                font-size: 24px !important;
+                line-height: 1.2;
+            }
+
+            .slogan-bold span {
+                font-size: 20px !important;
+                display: inline-block;
+            }
+
+            h1 span.slogan-bold + span.slogan-bold {
+                font-size: 16px !important;
+                margin-top: 10px;
+            }
+
+            .slogan-content p {
+                font-size: 14px !important;
+                line-height: 1.4;
+                margin: 10px 0;
+            }
+
+            .btn-start {
+                width: 100%;
+                max-width: 250px;
+                margin: 5px auto !important;
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 0 10px;
             }
 
             .client-logo {
@@ -176,10 +205,44 @@
                 margin: 5px;
             }
 
-            .slogan-img {
-                max-width: 100%;
-                margin: 20px auto;
-                display: block;
+            .feature-title {
+                font-size: 20px !important;
+                margin: 15px 0;
+            }
+
+            .open-source-feature {
+                font-size: 18px !important;
+            }
+
+            .yeo-body {
+                padding: 20px 0;
+            }
+
+            .yeo-do-content {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+
+            .yeo-do-content h3 {
+                font-size: 18px;
+                margin: 10px 0;
+            }
+
+            .yeo-do-content p {
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            .yeo-do-content img {
+                height: 100px;
+            }
+
+            .yeo-open-source {
+                padding: 20px 0;
+            }
+
+            .yeo-client {
+                padding: 20px 0;
             }
         }
 
@@ -211,6 +274,35 @@
         .slide-in.active .testimonial-card {
             opacity: 1;
             transform: translateX(0);
+        }
+
+        @media (max-width: 768px) {
+            .slogan-bold {
+                font-size: 32px !important;
+            }
+            
+            .slogan-bold span {
+                font-size: 28px !important;
+            }
+
+            .slogan-content {
+                padding: 15px !important;
+            }
+
+            .btn-start {
+                width: 100%;
+                max-width: 280px;
+                margin: 8px auto !important;
+                display: block;
+            }
+
+            .yeo-slogan {
+                padding-top: 0;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
         }
     </style>
 </head>
@@ -288,10 +380,10 @@
                 <div class="column col-7 col-sm-12">
                         <article class="slogan-content">
                         <h1>
-                                <span class="slogan-bold" style="font-size: 52px;">Expert Assignment & Coding Help <span style="font-size: 40px;">👨‍💻✍️</span></span> 
-                                <span style="margin-top: 20px; font-size: 22px;" class="slogan-bold">5⭐ Rated & Award Winning Assignment & Programming Help Services base in Singapore. Expert coders & professional writers at your disposal.</span>
+                                <span class="slogan-bold" style="font-size: clamp(24px, 5vw, 52px); line-height: 1.2;">Expert Assignment & Coding Help <span style="font-size: clamp(20px, 4vw, 40px); display: inline-block;">👨‍💻✍️</span></span> 
+                                <span style="margin-top: 10px; font-size: clamp(16px, 3vw, 22px); display: block; line-height: 1.4;" class="slogan-bold">5⭐ Rated & Award Winning Assignment & Programming Help Services base in Singapore. Expert coders & professional writers at your disposal.</span>
                         </h1>
-                            <p style="color: black; font-size: 18px;">Send us your assignment or questions through WhatsApp or Telegram below! ⬇️ We will reply immediately.</p>
+                            <p style="color: black; font-size: clamp(14px, 2.5vw, 18px); line-height: 1.5; margin: 15px 0;">Send us your assignment or questions through WhatsApp or Telegram below! ⬇️ We will reply immediately.</p>
                         <a id="whatsappBtn" class="btn btn-primary btn-lg btn-start" style="margin-top: 10px;"  target="_blank" href="https://bit.ly/3mMpWhH">
                             <i class="fa fa-whatsapp" style="margin-top: 0px; font-size:25px; color: #00bc9e;"></i>
                             <span>
@@ -590,38 +682,38 @@
                         <div class="client-logo">
                             <div class="inst-icon">
                             <a href="https://www.suss.edu.sg/" target="_blank">
-                                    <img src="./images/schools/SUSS.png" height="60" width="200" alt="Singapore University of Social Sciences" loading="lazy" decoding="async">
+                                    <img src="./images/schools/SUSS.png" style="height: 60px; width: auto; object-fit: contain;" alt="Singapore University of Social Sciences">
                             </a>
                             </div>
                             <div class="inst-icon">
                             <a href="https://www.mdis.edu.sg/" target="_blank">
-                                    <img src="./images/schools/mdis.png" height="60px" alt="Management Development Institute of Singapore">
-                        </a>
+                                    <img src="./images/schools/mdis.png" style="height: 60px; width: auto; object-fit: contain;" alt="Management Development Institute of Singapore">
+                            </a>
                             </div>
                             <div class="inst-icon">
                             <a href="https://www.sim.edu.sg/degrees-diplomas/sim-global-education/university-partners-sim-ge/monash-college" target="_blank">
-                                    <img src="./images/schools/monash-college.png" height="100px" alt="Monash College">
-                        </a>
+                                    <img src="./images/schools/monash-college.png" style="height: 80px; width: auto; object-fit: contain;" alt="Monash College">
+                            </a>
                             </div>
                             <div class="inst-icon">
                             <a href="https://www.psb-academy.edu.sg/" target="_blank">
-                                    <img src="./images/schools/psb.png" height="60px" alt="PSB Academy">
-                        </a>
+                                    <img src="./images/schools/psb.png" style="height: 60px; width: auto; object-fit: contain;" alt="PSB Academy">
+                            </a>
                             </div>
                             <div class="inst-icon">
                             <a href="https://www.nus.edu.sg/" target="_blank">
-                                    <img src="./images/schools/NUS.png" height="80px" alt="National University of Singapore">
-                        </a>
+                                    <img src="./images/schools/NUS.png" style="height: 80px; width: auto; object-fit: contain;" alt="National University of Singapore">
+                            </a>
                             </div>
                             <div class="inst-icon">
                             <a href="https://www.ntu.edu.sg/" target="_blank">
-                                    <img src="./images/schools/NTU.png" height="80px" alt="Nanyang Technological University">
-                        </a>
+                                    <img src="./images/schools/NTU.png" style="height: 80px; width: auto; object-fit: contain;" alt="Nanyang Technological University">
+                            </a>
                             </div>
                             <div class="inst-icon">
-                        <a href="https://www.singaporetech.edu.sg/" target="_blank">
-                                    <img src="./images/schools/SIT_logo.png" height="80px" alt="Singapore Institute of Technology">
-                        </a>
+                            <a href="https://www.singaporetech.edu.sg/" target="_blank">
+                                    <img src="./images/schools/SIT_logo.png" style="height: 80px; width: auto; object-fit: contain;" alt="Singapore Institute of Technology">
+                            </a>
                             </div>
                         </div>
                         <style>
