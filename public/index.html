@@ -6,8 +6,8 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Codingo - Singapore's trusted platform for expert coding help and programming assignments. Get quick assistance from professionals in coding and academic writing. Rated 5⭐ by satisfied clients.">
-    <title>Codingo - Singapore's 1st Coding Help Platform</title>
+    <meta name="description" content="Codingo - Singapore's trusted platform for expert programming and assignment help. Get quick assistance from professionals in all programming languages and academic writing. Rated 5⭐ by satisfied clients worldwide.">
+    <title>Codingo - Singapore's Leading Programming & Assignment Help Platform</title>
     <link rel="shortcut icon" type=image/png href="./images/herologo.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="./css/fab.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/window.css">
-    <meta name="keywords" content="coding help, programming assignment help, coding services Singapore, academic writing, coding assistance, Singapore coding help platform, professional programmers, online coding help">
-    <meta property="og:title" content="Codingo - Expert Programming Help in Singapore">
+    <meta name="keywords" content="coding help Singapore, programming assignment help, homework help Singapore, coding tutor Singapore, assignment help Singapore, Java programming, Python coding, C++ help, programming homework, coding assistance, programming experts">
+    <meta property="og:title" content="Codingo - Expert Programming & Assignment Help | Singapore Based">
     <meta property="og:url" content="https://www.codingo.sg">
-    <meta property="og:description" content="Stuck with a programming assignment? Codingo provides fast, reliable, and expert coding help in Singapore. Contact us now for quick solutions.">
+    <meta property="og:description" content="Need help with programming assignments or homework? Get expert coding assistance in any programming language. Fast, reliable, and professional help from Singapore's trusted platform.">
     <meta property="og:image" content="./images/herologo.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Codingo">
@@ -30,6 +30,28 @@
     <meta name="twitter:title" content="Codingo - Expert Programming Help in Singapore">
     <meta name="twitter:description" content="Stuck with a programming assignment? Codingo provides fast, reliable, and expert coding help in Singapore. Contact us now for quick solutions.">
     <meta name="twitter:image" content="./images/herologo.png">
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+        }
+
+        body {
+            padding-top: 80px; /* Add padding to prevent content from hiding behind fixed navbar */
+        }
+
+        /* Remove the previous styles */
+        .yeo-header {
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -78,24 +100,24 @@
         
         console.log('i am firebase wooohooo!', Date.now())
       </script>
+    <header class="navbar">
+        <section class="navbar-section">
+            <a class="navbar-brand logo" href="./">
+                <img class="logo-img" src="./images/LOGO website.png" alt="Logo">
+            </a>
+        </section>
+        <section class="navbar-section hide-sm">
+            <a class="btn btn-link" href="#we-do">What We Do</a>
+            <a class="btn btn-link" href="#we-how">How does it work?</a>
+            <a id="submitHomeworkBtn" class="btn btn-primary btn-hire-me" style="margin-right: 10px;" href="https://request.codingo.sg/assignment" target="_blank">Submit Assignment!</a>
+            <a style="margin-left: 10px;" class="btn price" href="https://wa.me/6594562307?text=I'm%20interested%20in%20joining%20Codingo!" target="_blank">Join Us</a>
+        </section>
+    </header>
     <div class="yeo-slogan">
         <div class="container yeo-header">
             <div class="columns">
                 <div class="column col-12">
-                    <header class="navbar">
-                        <section class="navbar-section">
-                            <a class="navbar-brand logo" href="./">
-                                <img class="logo-img" src="./images/LOGO website.png" alt="Logo">
-                            </a>
-                        </section>
-                        <section class="navbar-section hide-sm">
-                            <a class="btn btn-link" href="#we-do">What We Do</a>
-                            <a class="btn btn-link" href="#we-how">How does it work?</a>
-<!--                             <a class="btn btn-link" href="#team">Reviews</a> -->
-                            <a id="submitHomeworkBtn" class="btn btn-primary btn-hire-me" style="margin-right: 10px;" href="https://request.codingo.sg/assignment" target="_blank">Submit Assignment!</a>
-                            <a style="margin-left: 10px;" class="btn price" href="https://wa.me/6594562307?text=I'm%20interested%20in%20joining%20Codingo!" target="_blank">Join Us</a>
-                        </section>
-                    </header>
+                    <!-- Removing duplicate navbar -->
                 </div>
             </div>
         </div>
@@ -104,10 +126,10 @@
                 <div class="column col-7 col-sm-12">
                     <div class="slogan-content">
                         <h1>
-                            <span class="slogan-bold">Expert Assignment & Coding Help 🧑‍💻✍️</span> 
-                            <span style="margin-top: 20px; font-size: 20px;" class="slogan-bold">5⭐ Rated & Award Winning Assignment & Programming Help Services base in Singapore. Expert coders & professional writers at your disposal.</span>
+                            <span class="slogan-bold" style="font-size: 45px;">Expert Programming & Assignment Help <span style="font-size: 35px;">🧑‍💻✍️</span></span> 
+                            <span style="margin-top: 20px; font-size: 18px;" class="slogan-bold">5⭐ Rated Singapore's Leading Platform for Programming & Assignment Help. Expert coders & professional writers ready to assist with any programming language.</span>
                         </h1>
-                        <p style="color: black;">Send us your assignment or questions through WhatsApp or Telegram below! ⬇️ We will reply immediately.</p>
+                        <p style="color: black; font-size: 16px;">Need urgent help with your programming assignment or homework? Contact us through WhatsApp or Telegram below! ⬇️ We will reply immediately.</p>
                         <a id="whatsappBtn" class="btn btn-primary btn-lg btn-start" style="margin-top: 10px;"  target="_blank" href="https://bit.ly/3mMpWhH">
                             <i class="fa fa-whatsapp" style="margin-top: 0px; font-size:25px; color: #00bc9e;"></i>
                             <span>
@@ -172,30 +194,227 @@
                 <div class="column col-12">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img height="400" src="./images/a1.jpg" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/a2.jpg" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/a3.jpg" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 2.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 3.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 4.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 6.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 7.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 8.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 10.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 11.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 12.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 13.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 15.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 17.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/New 1 – 18.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/Good Carousell Reviews_1.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/Good Carousell Reviews_2.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/Good Carousell Reviews_3.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/Good Carousell Reviews_4.png" alt=""></div>
-                            <div class="swiper-slide"><img height="400" src="./images/reviews/Good Carousell Reviews_5.png" alt=""></div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/a1.jpg" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/a2.jpg" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/a3.jpg" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 2.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 3.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 4.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 6.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 7.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 8.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 10.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 11.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 12.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 13.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 15.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 17.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/New 1 – 18.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/Good Carousell Reviews_1.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/Good Carousell Reviews_2.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/Good Carousell Reviews_3.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/Good Carousell Reviews_4.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial-card">
+                                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                                <img height="400" src="./images/reviews/Good Carousell Reviews_5.png" alt="Client Testimonial">
+                                <div class="testimonial-overlay">
+                                    <div class="testimonial-text">ANOTHER SATISFIED CUSTOMER!</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <style>
+                        .testimonial-card {
+                            position: relative;
+                            border-radius: 15px;
+                            overflow: hidden;
+                            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                            transition: all 0.3s ease;
+                            background: white;
+                        }
+                        
+                        .testimonial-card img {
+                            width: 100%;
+                            height: 400px;
+                            object-fit: cover;
+                            border-radius: 15px;
+                            transition: all 0.3s ease;
+                        }
+                        
+                        .testimonial-rating {
+                            position: absolute;
+                            top: 15px;
+                            left: 15px;
+                            background: rgba(255,255,255,0.9);
+                            padding: 5px 10px;
+                            border-radius: 20px;
+                            font-size: 14px;
+                            z-index: 2;
+                            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                        }
+                        
+                        .testimonial-overlay {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+                            padding: 20px;
+                            transform: translateY(100%);
+                            transition: transform 0.3s ease;
+                        }
+                        
+                        .testimonial-text {
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                        
+                        .testimonial-card:hover {
+                            transform: translateY(-5px);
+                            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+                        }
+                        
+                        .testimonial-card:hover .testimonial-overlay {
+                            transform: translateY(0);
+                        }
+                        
+                        .testimonial-card:hover img {
+                            filter: brightness(0.9);
+                        }
+
+                        .swiper-container {
+                            padding: 20px 5px;
+                        }
+                    </style>
                 </div> 
             </div>
         </div>  
@@ -207,28 +426,67 @@
                         Our Client's Instituitions
                     </h3>
                         <div class="client-logo">
+                            <div class="inst-icon">
                             <a href="https://www.suss.edu.sg/" target="_blank">
-                            <img src="./images/schools/SUSS.png" height="60px" alt="">
+                                    <img src="./images/schools/SUSS.png" height="60px" alt="Singapore University of Social Sciences">
                         </a>
+                            </div>
+                            <div class="inst-icon">
                             <a href="https://www.mdis.edu.sg/" target="_blank">
-                            <img src="./images/schools/mdis.png" height="60px" alt="">
+                                    <img src="./images/schools/mdis.png" height="60px" alt="Management Development Institute of Singapore">
                         </a>
+                            </div>
+                            <div class="inst-icon">
                             <a href="https://www.sim.edu.sg/degrees-diplomas/sim-global-education/university-partners-sim-ge/monash-college" target="_blank">
-                            <img src="./images/schools/monash-college.png" height="100px" alt="">
+                                    <img src="./images/schools/monash-college.png" height="100px" alt="Monash College">
                         </a>
+                            </div>
+                            <div class="inst-icon">
                             <a href="https://www.psb-academy.edu.sg/" target="_blank">
-                            <img src="./images/schools/psb.png" height="60px" alt="">
+                                    <img src="./images/schools/psb.png" height="60px" alt="PSB Academy">
                         </a>
+                            </div>
+                            <div class="inst-icon">
                             <a href="https://www.nus.edu.sg/" target="_blank">
-                            <img src="./images/schools/NUS.png" height="80px" alt="">
+                                    <img src="./images/schools/NUS.png" height="80px" alt="National University of Singapore">
                         </a>
+                            </div>
+                            <div class="inst-icon">
                             <a href="https://www.ntu.edu.sg/" target="_blank">
-                            <img src="./images/schools/NTU.png" height="80px" alt="">
+                                    <img src="./images/schools/NTU.png" height="80px" alt="Nanyang Technological University">
                         </a>
+                            </div>
+                            <div class="inst-icon">
                         <a href="https://www.singaporetech.edu.sg/" target="_blank">
-                            <img src="./images/schools/SIT_logo.png" height="80px" alt="">
+                                    <img src="./images/schools/SIT_logo.png" height="80px" alt="Singapore Institute of Technology">
                         </a>
+                            </div>
                         </div>
+                        <style>
+                            .inst-icon {
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0 20px;
+                                padding: 15px;
+                                border-radius: 8px;
+                                transition: all 0.3s ease;
+                            }
+                            .inst-icon img {
+                                transition: all 0.3s ease;
+                                filter: grayscale(100%);
+                                opacity: 0.7;
+                            }
+                            .inst-icon:hover {
+                                transform: translateY(-5px);
+                                background: rgba(255, 255, 255, 0.1);
+                                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                            }
+                            .inst-icon:hover img {
+                                filter: grayscale(0%);
+                                opacity: 1;
+                            }
+                        </style>
                     </div>
                 </div>
             </div>
@@ -308,20 +566,81 @@
                         Programming Language Proficiency
                     </h3>
                         <div class="client-logo">
-                            <img src="./images/proglang/java.png" height="40px" alt="">
-                            <img src="./images/proglang/C.png" height="40px" alt="">
-                            <img src="./images/proglang/python.png" height="40px" alt="">
-                            <img src="./images/proglang/mysql.png" height="40px" alt="">
-                            <img src="./images/proglang/asp.png" height="40px" alt="">
+                            <div class="lang-icon">
+                                <img src="./images/proglang/java.png" height="40px" alt="Java Programming" title="Java Programming">
+                                <span class="lang-name">Java</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/C.png" height="40px" alt="C Programming" title="C Programming">
+                                <span class="lang-name">C</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/python.png" height="40px" alt="Python Programming" title="Python Programming">
+                                <span class="lang-name">Python</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/mysql.png" height="40px" alt="MySQL Database" title="MySQL Database">
+                                <span class="lang-name">MySQL</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/asp.png" height="40px" alt="ASP.NET" title="ASP.NET">
+                                <span class="lang-name">ASP.NET</span>
+                            </div>
                         </div>
                         <div class="client-logo">
-                            <img src="./images/proglang/R.png" height="40px" alt="">
-                            <img src="./images/proglang/c++.svg" height="40px" alt="">
-                            <img src="./images/proglang/matlab.png" height="40px" alt="">
-                            <img src="./images/proglang/php.png" height="40px" alt="">
-                            <img src="./images/proglang/htmlcssjs.png" height="40px" alt="">
-                            <img src="./images/proglang/arv.png" height="40px" alt="">
+                            <div class="lang-icon">
+                                <img src="./images/proglang/R.png" height="40px" alt="R Programming" title="R Programming">
+                                <span class="lang-name">R</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/c++.svg" height="40px" alt="C++ Programming" title="C++ Programming">
+                                <span class="lang-name">C++</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/matlab.png" height="40px" alt="MATLAB" title="MATLAB">
+                                <span class="lang-name">MATLAB</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/php.png" height="40px" alt="PHP Programming" title="PHP Programming">
+                                <span class="lang-name">PHP</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/htmlcssjs.png" height="40px" alt="HTML CSS JavaScript" title="HTML CSS JavaScript">
+                                <span class="lang-name">Web Dev</span>
+                            </div>
+                            <div class="lang-icon">
+                                <img src="./images/proglang/arv.png" height="40px" alt="Angular React Vue" title="Angular React Vue">
+                                <span class="lang-name">Frameworks</span>
+                            </div>
                         </div>
+                        <style>
+                            .lang-icon {
+                                display: inline-flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin: 0 15px;
+                                cursor: pointer;
+                                transition: transform 0.3s ease;
+                            }
+                            .lang-icon img {
+                                transition: transform 0.3s ease;
+                            }
+                            .lang-icon:hover {
+                                transform: translateY(-5px);
+                            }
+                            .lang-icon:hover img {
+                                transform: scale(1.1);
+                            }
+                            .lang-name {
+                                margin-top: 8px;
+                                font-size: 14px;
+                                opacity: 0;
+                                transition: opacity 0.3s ease;
+                            }
+                            .lang-icon:hover .lang-name {
+                                opacity: 1;
+                            }
+                        </style>
                     </div>
                 </div>
             </div>
