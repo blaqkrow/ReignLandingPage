@@ -103,6 +103,9 @@
 
         body {
             padding-top: 70px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 100%),
+                        url('./images/pattern.png') repeat;
+            background-attachment: fixed;
         }
 
         .yeo-slogan {
@@ -303,6 +306,51 @@
             .container {
                 padding: 0 10px;
             }
+        }
+
+        .yeo-open-source {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .yeo-open-source::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('./images/dots.png') repeat;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .yeo-do {
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        }
+
+        .yeo-client {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            position: relative;
+        }
+
+        .yeo-client::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('./images/grid.png') repeat;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
