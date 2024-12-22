@@ -8,6 +8,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Codingo - Singapore's trusted platform for expert programming and assignment help. Get quick assistance from professionals in all programming languages and academic writing. Rated 5⭐ by satisfied clients worldwide.">
     <title>Codingo - Singapore's Leading Programming & Assignment Help Platform</title>
+    <link rel="canonical" href="https://www.codingo.sg" />
+    <meta name="author" content="Codingo" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="keywords" content="coding help Singapore, programming assignment help, homework help Singapore, coding tutor Singapore, assignment help Singapore, Java programming, Python coding, C++ help, programming homework, coding assistance, programming experts, online coding help, programming tutor, coding assignment help, programming solutions">
     <link rel="shortcut icon" type=image/png href="./images/herologo.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -130,6 +135,30 @@
                 display: flex;
             }
         }
+
+        /* Update scroll animation styles */
+        .slide-in {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 0.8s ease-out;
+        }
+
+        .slide-in.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .testimonial-card {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.5s ease-out;
+            transition-delay: calc(var(--slide-index) * 0.1s);
+        }
+
+        .slide-in.active .testimonial-card {
+            opacity: 1;
+            transform: translateX(0);
+        }
     </style>
 </head>
 <body>
@@ -192,51 +221,52 @@
             <a style="margin-left: 10px;" class="btn price" href="https://wa.me/6594562307?text=I'm%20interested%20in%20joining%20Codingo!" target="_blank">Join Us</a>
         </section>
     </header>
-    <div class="yeo-slogan">
-        <div class="container yeo-header">
-            <div class="columns">
-                <div class="column col-12">
-                    <!-- Removing duplicate navbar -->
-                </div>
-            </div>
-        </div>
-        <div class="container slogan">
-            <div class="columns">
-                <div class="column col-7 col-sm-12">
-                    <div class="slogan-content">
-                        <h1>
-                            <span class="slogan-bold" style="font-size: 45px;">Expert Programming & Assignment Help <span style="font-size: 35px;">🧑‍💻✍️</span></span> 
-                            <span style="margin-top: 20px; font-size: 18px;" class="slogan-bold">5⭐ Rated Singapore's Leading Platform for Programming & Assignment Help. Expert coders & professional writers ready to assist with any programming language.</span>
-                        </h1>
-                        <p style="color: black; font-size: 16px;">Need urgent help with your programming assignment or homework? Contact us through WhatsApp or Telegram below! ⬇️ We will reply immediately.</p>
-                        <a id="whatsappBtn" class="btn btn-primary btn-lg btn-start" style="margin-top: 10px;"  target="_blank" href="https://bit.ly/3mMpWhH">
-                            <i class="fa fa-whatsapp" style="margin-top: 0px; font-size:25px; color: #00bc9e;"></i>
-                            <span>
-                                WhatsApp Us Now!
-                            </span>
-                        </a>
-                        <br>
-                        <a id="telegramBtn" class="btn btn-primary btn-lg btn-start" style="margin-top: 10px;"  target="_blank" href="https://t.me/codingosg">
-                            <i class="fa fa-telegram" style="margin-top: 0px; font-size:25px; color: cornflowerblue;"></i>
-                            <span>
-                                Telegram Us Now!
-                            </span>
-                        </a>
-                        <br>
-                        <a id="submitAssignmentBtn" class="btn btn-primary btn-lg btn-start" style="margin-top: 10px;"  target="_blank" href="https://request.codingo.sg/assignment">Submit Coding Request</a>
-                        <br>
-                        <!-- <a class="btn price" style="margin-top: 10px;" target="_blank" href="https://wa.me/6594562307?text=I'm%20interested%20in%20joining%20Coding%20Hero!">JOIN US AS A CODER!</a> -->
+    <main>
+        <div class="yeo-slogan">
+            <div class="container yeo-header">
+                <div class="columns">
+                    <div class="column col-12">
+                        <!-- Removing duplicate navbar -->
                     </div>
                 </div>
+            </div>
+            <section class="container slogan">
+                <div class="columns">
+                    <div class="column col-7 col-sm-12">
+                        <article class="slogan-content">
+                            <h1>
+                                <span class="slogan-bold" style="font-size: 45px;">Expert Programming & Assignment Help <span style="font-size: 35px;">🧑‍💻✍️</span></span> 
+                                <span style="margin-top: 20px; font-size: 18px;" class="slogan-bold">5⭐ Rated Singapore's Leading Platform for Programming & Assignment Help. Expert coders & professional writers ready to assist with any programming language.</span>
+                            </h1>
+                            <p style="color: black; font-size: 16px;">Need urgent help with your programming assignment or homework? Contact us through WhatsApp or Telegram below! ⬇️ We will reply immediately.</p>
+                            <a id="whatsappBtn" class="btn btn-primary btn-lg btn-start" style="margin-top: 10px;"  target="_blank" href="https://bit.ly/3mMpWhH">
+                                <i class="fa fa-whatsapp" style="margin-top: 0px; font-size:25px; color: #00bc9e;"></i>
+                                <span>
+                                    WhatsApp Us Now!
+                                </span>
+                            </a>
+                            <br>
+                            <a id="telegramBtn" class="btn btn-primary btn-lg btn-start" style="margin-top: 10px;"  target="_blank" href="https://t.me/codingosg">
+                                <i class="fa fa-telegram" style="margin-top: 0px; font-size:25px; color: cornflowerblue;"></i>
+                                <span>
+                                    Telegram Us Now!
+                                </span>
+                            </a>
+                            <br>
+                            <a id="submitAssignmentBtn" class="btn btn-primary btn-lg btn-start" style="margin-top: 10px;"  target="_blank" href="https://request.codingo.sg/assignment">Submit Coding Request</a>
+                            <br>
+                            <!-- <a class="btn price" style="margin-top: 10px;" target="_blank" href="https://wa.me/6594562307?text=I'm%20interested%20in%20joining%20Coding%20Hero!">JOIN US AS A CODER!</a> -->
+                        </article>
+                    </div>
                     <div class="column col-5 col-sm-12">
                         <a href="https://www.carousell.sg/p/no-1-in-singapore-carousell-for-programming-assignment-help-2024-specialist-awards-winner-1340138784/?t-id=21833465_1731732787185&t-referrer_browse_type=seller&t-referrer_page_type=profile&t-referrer_request_id=QWvYbAXY7jliuNBw&t-tap_index=9">
                             <img class="slogan-img" src="./images/numba1.jpg" alt="Team Work">
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-        <div class="yeo-open-source">
+        <section class="yeo-open-source">
             <div class="container yeo-body">
                 <div class="columns">
                     <div class="column col-12">
@@ -262,7 +292,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="yeo-open-source">
             <div>
                 <div class="columns">
@@ -270,7 +300,7 @@
                         <h2 class="feature-title">Real Testimonials From Our Satisfied Clients & Our Accolades</h2>
                     </div>
                 </div>
-                <div class="column col-12">
+                <div class="column col-12 slide-in">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide testimonial-card">
@@ -755,7 +785,7 @@
                 </div>
             </div>
         </div>  -->
-        <div class="yeo-footer">
+        <footer class="yeo-footer">
             <div class="container">
                 <div class="columns">
                     <div class="column col-3 col-sm-6">
@@ -807,7 +837,7 @@
                     </div> -->
                 </div>
             </div>
-        </div>
+        </footer>
 
             <a id="whatsappFloating" target="_blank" href="https://bit.ly/3mMpWhH" class="float">
                 <i class="fa fa-whatsapp" style="margin-top: 5px; font-size:60px; color: #00bc9e;"></i>
@@ -860,6 +890,30 @@
                 console.log('Submit Clicked!!!')
                 clickedSubmitRequest()
             })
+
+            // Update the observer code
+            document.addEventListener('DOMContentLoaded', function() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            
+                            // Add delay to each testimonial card
+                            const cards = entry.target.querySelectorAll('.testimonial-card');
+                            cards.forEach((card, index) => {
+                                card.style.setProperty('--slide-index', index);
+                            });
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '50px'
+                });
+
+                // Observe the slide-in container
+                const slideElements = document.querySelectorAll('.slide-in');
+                slideElements.forEach((el) => observer.observe(el));
+            });
         </script>
 
 <script type="application/ld+json">
@@ -882,6 +936,58 @@
     }
     </script>
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What programming languages do you support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We support all major programming languages including Java, Python, C++, R, MATLAB, PHP, and web development frameworks."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How fast can you complete my assignment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "90% of our projects are completed within a day! We provide fast response and quick turnaround times."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What type of assignments do you handle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We handle all types of programming assignments, projects, web and mobile apps, as well as academic writing tasks including essays, reports, and dissertations."
+        }
+      }]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.codingo.sg"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "What We Do",
+        "item": "https://www.codingo.sg#we-do"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How It Works",
+        "item": "https://www.codingo.sg#we-how"
+      }]
+    }
+    </script>
+</main>
 </body>
 
 </html>
