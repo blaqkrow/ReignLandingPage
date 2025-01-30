@@ -597,6 +597,25 @@
             </div>
         </section>
         <div class="yeo-open-source">
+        <div class="container yeo-body">
+            <div class="columns">
+                <div class="column col-12">
+                    <h2 class="feature-title">View Our Extensive Portfolio</h2>
+                </div>
+                <div class="column col-10 centered col-sm-12">
+                    <img style="height: 120px; margin-bottom: 20px;" src="./images/portfolio.png" alt="">
+                    <h2 class="open-source-feature" style=" font-size: 25px; font-weight: 1000;">
+                    7 Years in Business 🤝. 100+ Writers & Coders 👨🏻‍💻. 9000+ Satisfied Clients 😌.
+                    </h2>
+                    <h3 class="open-source-feature" style="margin-top: 20px; font-size: 22px; font-weight: 500;">
+                        Check Out Our Portfolio Below ⬇️
+                        </h3>
+                    <a target="_blank" id="portBtn" style="margin-top: 15px;" href="https://bit.ly/codingoportfolio" class="btn btn-lg btn-open-source">DOWNLOAD PORTFOLIO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="yeo-open-source">
             <div>
                 <div class="columns">
                     <div class="column col-12">
@@ -1169,6 +1188,7 @@
             var submitAssignment = document.getElementById('submitAssignmentBtn')
             var submitHomework = document.getElementById('submitHomeworkBtn')
             var submitRefund = document.getElementById('refundBtn')
+            var portfolioBtn= document.getElementById('portBtn')
 
             submitRefund.addEventListener('click', function() {
                 console.log('Refund clicked!')
@@ -1177,10 +1197,6 @@
             waBtn.addEventListener('click', function() {
                 console.log('Whatsapp Clicked!!!')
                 clickedWhatsapp()
-            })
-            portfolioBtn.addEventListener('click', function() {
-                console.log('Tele Clicked!!!')
-                portfolioBtn()
             })
             teleBtn.addEventListener('click', function() {
                 console.log('Tele Clicked!!!')
@@ -1206,7 +1222,10 @@
                 console.log('Submit Clicked!!!')
                 clickedSubmitRequest()
             })
-
+            portfolioBtn.addEventListener('click', function() {
+                console.log('Portfolio Clicked!!!')
+                clickedPortfolio()
+            })
             // Update the observer code
             document.addEventListener('DOMContentLoaded', function() {
                 const observer = new IntersectionObserver((entries) => {
