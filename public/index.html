@@ -496,6 +496,12 @@
                 'timestamp': Date.now()
             })
         }
+        async function clickedPortfolio() {
+            console.log('coooool')
+            await firestore.collection('Portfolio').add({
+                'timestamp': Date.now()
+            })
+        }
         async function clickedRefund() {
             console.log('coooool')
             await firestore.collection('Refund').add({
@@ -1171,6 +1177,10 @@
             waBtn.addEventListener('click', function() {
                 console.log('Whatsapp Clicked!!!')
                 clickedWhatsapp()
+            })
+            portfolioBtn.addEventListener('click', function() {
+                console.log('Tele Clicked!!!')
+                portfolioBtn()
             })
             teleBtn.addEventListener('click', function() {
                 console.log('Tele Clicked!!!')
